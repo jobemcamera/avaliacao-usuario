@@ -2,17 +2,18 @@ body {
     background: hsl(216, 12%, 8%);
 }
 
+
 .card {
     background-color: hsl(213, 19%, 18%);
     position: relative;
-	width: 500px;
+	width: 800px;
 	margin: 200px auto;
-    text-align: center;
     box-sizing: border-box;
 	border: 2px solid #000000;
 	border-radius: 10px;
     padding: 50px;
 }
+
 
 h1 {
     text-align: center;
@@ -20,6 +21,7 @@ h1 {
     font-size: 40px;
     color: hsl(217, 12%, 63%); 
 }
+
 
 p {
     padding: 15px;
@@ -29,39 +31,51 @@ p {
     color: hsl(216, 12%, 54%);
 }
 
-.input-padrao {
+
+.classficacao {
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.caixa-mensagem {
     display: block;
 	margin-top: 20px;
     margin-bottom: 20px;
-	padding: 5px;
+	padding: 10px;
 	width: 97%;
+    border: none;
+    border-radius: 10px;
 }
 
+
 form label {
-    color: hsl(217, 12%, 63%); 
+    color: hsl(216, 12%, 54%);
     display: inline-block;
 	font-size: 20px;
-	margin: 0 0 10px;
+	margin-top: 10px;
+    margin-left: 5px;
     padding: 5px;
 }
 
+
 .enviar {
+    text-transform: uppercase;
     color: hsl(25, 97%, 53%);;
     width: 40%;
     padding: 15px;
     background: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.1s;
-
 }
+
 
 .enviar:hover {
     transform: scale(1.05);
     background: hsl(25, 97%, 53%);
     color: white;
-
 }
