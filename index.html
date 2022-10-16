@@ -5,13 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Avaliação</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
     <main>
-        <h1>Pesquisa de satisfação</h1>
-        <p>Nos deixe saber como foi nosso suporte para você. Nos classifique de 1 a 5.</p>
-        <input type="submit" value="Enviar" class="enviar">
+        <div class="card">
+            <h1>Pesquisa de satisfação</h1>
+            <p>Nos deixe saber como foi nosso suporte para você. Nos classifique de 1 a 5.</p>
+            
+            <form>
+                <fieldset>
+                    <label for="1"><input type="radio" name="classificacao" value="1" id="1">1</label>
+                    <label for="2"><input type="radio" name="classificacao" value="2" id="2">2</label>
+                    <label for="3"><input type="radio" name="classificacao" value="3" id="3">3</label>
+                    <label for="4"><input type="radio" name="classificacao" value="4" id="4">4</label>
+                    <label for="5"><input type="radio" name="classificacao" value="5" id="5">5</label>
+                </fieldset>
+            </form>
+
+            <input type="submit" value="Enviar" class="enviar">
+        </div>
     </main>
 </body>
 </html>
