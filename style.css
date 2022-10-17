@@ -12,6 +12,11 @@ body {
 	border: 2px solid #000000;
 	border-radius: 10px;
     padding: 50px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 
@@ -22,8 +27,7 @@ h1 {
     color: hsl(217, 12%, 63%); 
 }
 
-
-p {
+.mensagem-principal {
     padding: 15px;
     text-align: center;
     font-size: 20px;
@@ -31,10 +35,29 @@ p {
     color: hsl(216, 12%, 54%);
 }
 
-
-.classficacao {
+/*.classificacao {
+    color: hsl(216, 12%, 54%);
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 5px;
     text-align: center;
-    cursor: pointer;
+}*/
+
+.card .classificacao input {
+    display: none;
+}
+
+.classificacao label {
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+}
+
+input:checked~label {
+    color: #fd4;
 }
 
 
@@ -49,18 +72,21 @@ p {
 }
 
 
-form label {
+.mensagem-secundaria {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: -15px;
+    text-align: left;
+    font-size: 18px;
     color: hsl(216, 12%, 54%);
-    display: inline-block;
-	font-size: 20px;
-	margin-top: 10px;
-    margin-left: 5px;
-    padding: 5px;
 }
 
 
 .enviar {
     text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin: auto;
     color: hsl(25, 97%, 53%);;
     width: 40%;
     padding: 15px;
