@@ -66,7 +66,7 @@ input:checked ~ label {
     border-radius: 10px;
 }
 
-.enviar {
+#enviar {
     text-transform: uppercase;
     text-align: center;
     display: block;
@@ -84,7 +84,7 @@ input:checked ~ label {
 }
 
 
-.enviar:hover {
+#enviar:hover {
     transform: scale(1.05);
     background: hsl(25, 97%, 53%);
     color: white;

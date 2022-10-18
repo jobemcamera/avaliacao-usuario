@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
 </head>
 <body>
 
@@ -36,7 +37,8 @@
 
             <div>
                 <textarea id="mensagem" class="caixa-mensagem" cols="50" rows="5" required placeholder="Conte-nos sua experiência..."></textarea>
-                <input type="submit" value="Enviar" class="enviar">
+                <button type="submit" id="enviar" onclick='pegaValores()'>Enviar</button>
+                <!--<button type="submit" id="enviar" onclick='alert(document.getElementById("mensagem").value);'>Enviar</button> -->
             </div>
 
         </div>                     
