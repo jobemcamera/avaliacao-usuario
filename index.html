@@ -8,39 +8,39 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
 
     <main>
-        <div class="card">
+        <div class="container">
+
             <h1>Pesquisa de satisfação</h1>
             <p class="mensagem-principal">Nos deixe saber como foi nosso suporte para você. Nos classifique de 1 a 5.</p>
             
-                <div class="classificacao">
-                    <input type="radio" name="rate" id="one">
-                    <label for="one" class="fa fa-star"></label>
+            <div class="classificacao">
+                <input type="radio" name="rate" id="one">
+                <label for="one" class="fa fa-star"></label>
 
-                    <input type="radio" name="rate" id="two">
-                    <label for="two" class="fa fa-star"></label>
+                <input type="radio" name="rate" id="two">
+                <label for="two" class="fa fa-star"></label>
 
-                    <input type="radio" name="rate" id="three">
-                    <label for="three" class="fa fa-star"></label>
+                <input type="radio" name="rate" id="three">
+                <label for="three" class="fa fa-star"></label>
 
-                    <input type="radio" name="rate" id="four">
-                    <label for="four" class="fa fa-star"></label>
+                <input type="radio" name="rate" id="four">
+                <label for="four" class="fa fa-star"></label>
 
-                    <input type="radio" name="rate" id="five">
-                    <label for="five" class="fa fa-star"></label>
-                </div>
+                <input type="radio" name="rate" id="five">
+                <label for="five" class="fa fa-star"></label>
+            </div>
 
-                     
-                <!--<label for="mensagem" class="mensagem-titulo">Deixe uma mensagem</label> --> 
-                <p class="mensagem-secundaria">Deixe uma mensagem</p>
-                <textarea id="mensagem" class="caixa-mensagem" cols="10" rows="5"></textarea>
-
+            <div>
+                <textarea id="mensagem" class="caixa-mensagem" cols="50" rows="5" required placeholder="Conte-nos sua experiência..."></textarea>
                 <input type="submit" value="Enviar" class="enviar">
-        </div>
+            </div>
+
+        </div>                     
+                
     </main>
 
 </body>

@@ -1,21 +1,5 @@
 body {
     background: hsl(216, 12%, 8%);
-}
-
-
-.card {
-    background-color: hsl(213, 19%, 18%);
-    position: relative;
-	width: 800px;
-	margin: 200px auto;
-    box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 10px;
-    padding: 50px;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
 
 }
 
@@ -27,25 +11,21 @@ h1 {
     color: hsl(217, 12%, 63%); 
 }
 
-.mensagem-principal {
-    padding: 15px;
-    text-align: center;
-    font-size: 20px;
-    margin: 10px 0;
-    color: hsl(216, 12%, 54%);
+.container {
+    background-color: hsl(213, 19%, 18%);
+	width: 550px;
+	margin: 200px auto;
+    box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-/*.classificacao {
-    color: hsl(216, 12%, 54%);
-    display: block;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-left: 5px;
-    padding: 5px;
-    text-align: center;
-}*/
-
-.card .classificacao input {
+.container .classificacao input {
     display: none;
 }
 
@@ -56,10 +36,26 @@ h1 {
     float: right;
 }
 
-input:checked~label {
+
+input:not(:checked) ~ label {
+    color: rgb(90, 85, 30)
+}
+
+input:not(:checked) ~ label:hover ~ label {
     color: #fd4;
 }
 
+input:checked ~ label {
+    color: #fd4;
+}
+
+.mensagem-principal {
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+    color: hsl(216, 12%, 54%);
+}
 
 .caixa-mensagem {
     display: block;
@@ -70,17 +66,6 @@ input:checked~label {
     border: none;
     border-radius: 10px;
 }
-
-
-.mensagem-secundaria {
-    display: block;
-    margin-top: 18px;
-    margin-bottom: -15px;
-    text-align: left;
-    font-size: 18px;
-    color: hsl(216, 12%, 54%);
-}
-
 
 .enviar {
     text-transform: uppercase;
