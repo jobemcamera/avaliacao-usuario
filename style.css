@@ -40,10 +40,11 @@ input:not(:checked) ~ label {
     color: rgb(90, 85, 30)
 }
 
+/*
 input:not(:checked) ~ label:hover ~ label {
     color: #fd4;
 }
-
+*/
 input:checked ~ label {
     color: #fd4;
 }
@@ -56,7 +57,7 @@ input:checked ~ label {
     color: hsl(216, 12%, 54%);
 }
 
-.caixa-mensagem {
+#caixa-mensagem {
     display: block;
 	margin-top: 20px;
     margin-bottom: 20px;
@@ -88,4 +89,12 @@ input:checked ~ label {
     transform: scale(1.05);
     background: hsl(25, 97%, 53%);
     color: white;
+}
+
+.texto-botao p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: hsl(217, 12%, 63%); 
+    margin: 15px;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="index.js"></script>
+    
 </head>
 <body>
 
@@ -19,31 +19,32 @@
             <p class="mensagem-principal">Nos deixe saber como foi nosso suporte para você. Nos classifique de 1 a 5.</p>
             
             <div class="classificacao">
-                <input type="radio" name="rate" id="five">
+                <input type="radio" name="rate" id="five" class="estrela" value=5>
                 <label for="five" class="fa fa-star"></label>
 
-                <input type="radio" name="rate" id="four">
+                <input type="radio" name="rate" id="four" class="estrela" value=4>
                 <label for="four" class="fa fa-star"></label>
 
-                <input type="radio" name="rate" id="three">
+                <input type="radio" name="rate" id="three" class="estrela" value=3>
                 <label for="three" class="fa fa-star"></label>
 
-                <input type="radio" name="rate" id="two">
+                <input type="radio" name="rate" id="two" class="estrela" value=2>
                 <label for="two" class="fa fa-star"></label>
 
-                <input type="radio" name="rate" id="one">
+                <input type="radio" name="rate" id="one" class="estrela" value=1>
                 <label for="one" class="fa fa-star"></label>
             </div>
 
-            <div>
-                <textarea id="mensagem" class="caixa-mensagem" cols="50" rows="5" required placeholder="Conte-nos sua experiência..."></textarea>
-                <button type="submit" id="enviar" onclick='pegaValores()'>Enviar</button>
-                <!--<button type="submit" id="enviar" onclick='alert(document.getElementById("mensagem").value);'>Enviar</button> -->
+            <div class="texto-botao">
+                <textarea id="caixa-mensagem" cols="50" rows="5" required placeholder="Conte-nos sua experiência..."></textarea>
+                <button id="enviar">Enviar</button>
+                <p id="resultado-estrela">Classificação</p>
+                <p id="resultado-texto">Mensagem</p>
             </div>
 
         </div>                     
                 
     </main>
-
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
