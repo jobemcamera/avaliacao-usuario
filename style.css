@@ -41,10 +41,11 @@ input:not(:checked) ~ label {
 }
 
 /*
-input:not(:checked) ~ label:hover ~ label {
+input:(:checked) ~ label:hover ~ label {
     color: #fd4;
 }
 */
+
 input:checked ~ label {
     color: #fd4;
 }
